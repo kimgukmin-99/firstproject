@@ -30,10 +30,10 @@ public class ArticleController {
 
         //로깅
         log.info(form.toString());
-        //변환
+        //변환하기 
         Article article = form.toEntity();
         log.info(article.toString());
-        //저장
+        //저장하기 
         Article saved = articleRepository.save(article);
         log.info(saved.toString());
 
